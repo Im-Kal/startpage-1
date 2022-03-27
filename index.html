@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<title>Apro's Startpage</title>
+		<title>Adithya's Startpage</title>
 		<meta charset='utf-8'>
 		<link rel='stylesheet' href='catppuccin.css'>
 		<script src="https://kit.fontawesome.com/497f4f4907.js" crossorigin="anonymous"></script>
+		<base target="_blank">
 	</head>                              
                                        
 	<body class='flexbox' onload="startTime()">
 		<div class="mainbox">
-			<h1 class='title'>Welcome back, <span class='hl'>Apro</span>.</h1>
+			<h1 class='title'>Welcome back, <span class='hl'>Adithya</span>.</h1>
 			<table>
 				<tr>
 					<td>
@@ -28,49 +29,42 @@
 						<nav class='flexbox' style='flex-direction: column;'>
 							<div class='flexbox' style='flex-direction: row; align-items: flex-start; justify-content: space-evenly;'>
 								<div>
-									<b>~/media</b>
+									<b>~/important</b>
 									<ul>
-										<li><a href='https://www.youtube.com/'>/youtube</a></li>
-										<li><a href='https://www.netflix.com/'>/netflix</a></li>
-										<li><a href='https://www.twitter.com/'>/twitter</a></li>
-										<li><a href='https://www.odysee.com/'>/odysee</a></li>
-										<li><a href='http://192.168.1.7:8084'>/jellyfin</a></li>
+										<li><a href='https://mail.protonmail.com/u/0/inbox'>/protonmail</a></li>
+										<li><a href='https://myaccount.google.com/device-activity'>/google accounts</a></li>
+										<li><a href='https://studentportal.codeyoung.com/'>/student portal</a></li>
+										<li><a href='https://github.com/'>/github</a></li>
+										<li><a href='https://twitter.com/'>/twitter</a></li>
 									</ul>
 								</div>
 								<div>
 									<b>~/reddit</b>
 									<ul>
-										<li><a href='https://www.reddit.com/r/unixporn/'>/unixporn</a></li>
+										<li><a href='https://www.reddit.com/r/unixporn/'>/privacy</a></li>
 										<li><a href='https://www.reddit.com/r/linuxmasterrace/'>/linuxmasterrace</a></li>
-										<li><a href='https://www.reddit.com/r/mechanicalkeyboards/'>/mechkeebs</a></li>
-										<li><a href='https://www.reddit.com/r/traaaaaaannnnnnnnnns/'>/traa</a></li>
+										<li><a href='https://libreddit.spike.codes/r/linuxmemes'>/linuxmemes</a></li>
+										<li><a href='https://libreddit.spike.codes/r/firefoxcss'>/firefoxcss</a></li>
 									</ul>
 								</div>
 								<div>
-									<b>~/dev</b>
+									<b>~/music</b>
 									<ul>
-										<li><a href='https://www.github.com/'>/github</a></li>
-										<li><a href='https://www.stackoverflow.com/'>/stack-overflow</a></li>
-										<li><a href='https://www.mankier.com/'>/mankier</a></li>
+										<li><a href='https://coderadio.freecodecamp.org/'>/code radio</a></li>
+										<li><a href='https://radio.mashtoolz.xyz/'>/mtz radio</a></li>
+										<li><a href='https://yewtu.be/watch?v=19BbOdi2sT4'>/razer lofi</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class='flexbox' style='flex-direction: row; align-items: flex-start; justify-content: space-evenly; width:100%;'>
 								<div>
-									<b>~/school</b>
+									<b>~/self hosted</b>
 									<ul>
-										<li><a href='https://www.gmail.com/'>/gmail</a></li>
-										<li><a href='https://classroom.google.com/'>/classroom</a></li>
-										<li><a href='https://vsps-su.bakalari.cz/baka/login'>/bakalari</a></li>
-									</ul>
-								</div>
-								<div>
-									<b>~/misc</b>
-									<ul>
-										<li><a href='https://www.monkeytype.com/'>/monkeytype</a></li>
-										<li><a href='https://www.cstimer.net'>/cstimer</a></li>
-										<li><a href='https://wiki.archlinux.org/'>/archwiki</a></li>
-										<li><a href='https://distrowatch.com/'>/distrowatch</a></li>
+										<li><a href='http://192.168.1.12/admin'>/pihole</a></li>
+										<li><a href='https://192.168.1.12:8080/'>/bitwarden</a></li>
+										<li><a href='http://192.168.1.12:85/'>/libreddit</a></li>
+										<li><a href='http://192.168.1.12:5000/'>/whoogle</a></li>
+										<li><a href='https://192.168.1.12:9443/'>/portainer</a></li>
 									</ul>
 								</div>
 							</div>
@@ -135,7 +129,7 @@
 
 				function searchDDG() {
 					search_term = document.getElementById('search_box').value;
-					window.location.href = "https://duckduckgo.com/?q=" + encodeURI(search_term);
+					window.location.href = "http://192.168.1.12:5000/search?q=%s" + encodeURI(search_term);
 								
 					return false;
 				}
